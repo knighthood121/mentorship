@@ -11,14 +11,18 @@ import EventDetails from './pages/EventDetails';
 import History from './pages/History';
 import Profile from './pages/Profile';
 import ScheduleMeet from './pages/ScheduleMeet';
+import Navbar from './components/Navbar';
+import { useState } from 'react';
+
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(true)
   return (
     <>
       <Main>
         <Routes>
           <Route path='/home' element={<Home />} />
-          <Route path='/' element={<Login />} />
+          <Route path='/' element={<Login onClick={setIsLoggedIn}/>} />
           <Route path='/chat' element={<Chat />} />
           <Route path='/details' element={<Details />} />
           <Route path='/docs' element={<Docs />} />
@@ -29,6 +33,11 @@ function App() {
           <Route path='/profile' element={<Profile />} />
           <Route path='/schedulemeet' element={<ScheduleMeet />} />
         </Routes>
+        {
+          isLoggedIn
+            ? <Navbar />
+            : <></>
+        }
       </Main>
     </>
   );

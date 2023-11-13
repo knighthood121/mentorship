@@ -1,6 +1,7 @@
 // import person from "./assets/person.jpeg";
 import profile_img from "../assets/person.jpeg"
 import arrow from "../assets/arrow.svg"
+import { Link } from "react-router-dom"
 
 export default function ProfileCard({ name, expertise, company }) {
 
@@ -31,9 +32,6 @@ export default function ProfileCard({ name, expertise, company }) {
             fontWeight: 400,
             lineHeight: "normal",
             letterSpacing: "-0.333px",
-
-            position: "relative",
-            bottom: "10px",
         },
 
         text: {
@@ -49,15 +47,16 @@ export default function ProfileCard({ name, expertise, company }) {
         }
     }
     return (
+        <Link to={"/details"} style={{textDecoration: "none"}}>
         <div style={styles.card}>
-            <div style={{ display: "flex", alignItems: "baseline" }}>
+            <div style={{ display: "flex", alignItems: "flex-end" }}>
                 <img style={styles.profile_image} src={profile_img} alt="" />
                 <p style={styles.name}>{name}</p>
             </div>
             {
                 expertise
-                    ? <p style={styles.text}>{expertise.join(" | ") + " Expert"}</p>
-                    : <></>
+                ? <p style={styles.text}>{expertise.join(" | ") + " Expert"}</p>
+                : <></>
             }
 
             <div style={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
@@ -69,5 +68,6 @@ export default function ProfileCard({ name, expertise, company }) {
             </div>
 
         </div>
+    </Link>
     )
 }
