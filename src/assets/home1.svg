@@ -1,0 +1,21 @@
+<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Union" filter="url(#filter0_dd_36_65)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.8 1H20.2C22.851 1 25 3.14903 25 5.8V14.2C25 14.8627 24.4627 15.4 23.8 15.4C23.1373 15.4 22.6 14.8627 22.6 14.2V8.2H10.6V22.6H23.8C24.4627 22.6 25 23.1373 25 23.8C25 24.4627 24.4627 25 23.8 25H5.8C3.14903 25 1 22.851 1 20.2V5.8C1 3.14903 3.14903 1 5.8 1ZM5.8 3.4H8.2V22.6H5.8C4.47452 22.6 3.4 21.5255 3.4 20.2V5.8C3.4 4.47452 4.47452 3.4 5.8 3.4ZM20.2 3.4C21.5255 3.4 22.6 4.47452 22.6 5.8H10.6V3.4H20.2ZM13 19C13 18.3372 13.5373 17.8 14.2 17.8H23.8C24.4627 17.8 25 18.3373 25 19C25 19.6627 24.4627 20.2 23.8 20.2H14.2C13.5373 20.2 13 19.6627 13 19ZM14.2 13C13.5373 13 13 13.5372 13 14.2C13 14.8627 13.5373 15.4 14.2 15.4H19C19.6627 15.4 20.2 14.8627 20.2 14.2C20.2 13.5373 19.6627 13 19 13H14.2Z" fill="#37352F"/>
+</g>
+<defs>
+<filter id="filter0_dd_36_65" x="0" y="0" width="26" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="1" dy="1"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.745098 0 0 0 0 0.745098 0 0 0 0 0.745098 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_36_65"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-1" dy="-1"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+<feBlend mode="normal" in2="effect1_dropShadow_36_65" result="effect2_dropShadow_36_65"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_36_65" result="shape"/>
+</filter>
+</defs>
+</svg>
