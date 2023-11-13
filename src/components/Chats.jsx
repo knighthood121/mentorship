@@ -2,7 +2,7 @@ import React from "react";
 
 function Chats() {
   return (
-   lskjlaf
+    <div className="chats"></div>
   );
 }
 
