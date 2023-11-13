@@ -104,8 +104,8 @@ export default function Chat() {
         <div style={{ height: "92%", overflowY: 'scroll' }}>
           {/* <ChatBox text={"chat"} profile_image={profile_image} type={'sent'} /> */}
           {
-            history.map((chat) => {
-              return <ChatBox text={chat} profile_image={profile_image} type={"recieved"} />
+            history.map((chat, index) => {
+              return <ChatBox key={index} text={chat} profile_image={profile_image} type={"recieved"} />
             })
           }
         </div>
