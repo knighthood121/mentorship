@@ -1,25 +1,50 @@
-import React from 'react'
-import "../styling/header.css";
-import home from "../assets/home1.svg";
-import chats from "../assets/chats1.svg";
-import profile from "../assets/profile1.svg";
+import logo from "../assets/logo.svg";
 
-function Header() {
-  return (
-    <div className='header'>
-        <div className="paddel">
-        <div className="h">
-            <a href='/home'><img src={home} alt="" /></a>
-            </div>
-            <div className="m">
-             <a href='/chats'><img src={chats} alt="" /></a>
-            </div>
-            <div className="p">
-            <a href='/profile'><img src={profile} alt="" /></a>
+export default function Header({ text }) {
+
+    const styles = {
+        h1: {
+            color: "var(--text-color-dark)",
+            fontFamily: "Poppins",
+            fontSize: "55px",
+            fontStyle: "normal",
+            fontWeight: 400,
+            lineHeight: "42px",
+            letterSpacing: "-0.333px",
+
+            width: "60%"
+        },
+
+        img: {
+            width: "60px",
+            // height: "51.608px",
+        },
+
+        div: {
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            // margin: "0rem 1rem"
+
+        },
+
+        img_div: {
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "75px",
+            height: "75px",
+            fill: "var(--main-bg-color)",
+            borderRadius: "100px",
+            boxShadow: "2px 2px 4px 0px var(--dark-shadow) inset, -2px -2px 4px 0px var(--light-shadow) inset",
+        }
+    }
+    return (
+        <div style={styles.div}>
+            <h1 style={styles.h1}>{text}</h1>
+            <div style={styles.img_div}>
+                <img style={styles.img} src={logo} />
             </div>
         </div>
-    </div>
-  )
+    )
 }
-
-export default Header
