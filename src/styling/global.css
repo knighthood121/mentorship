@@ -1,0 +1,12 @@
+:root {
+    --main-bg-color: #e0e0e0;
+    --light-shadow: #ffffff;
+    --dark-shadow: #bebebe;
+    --text-color-dark: #37352F;
+    --text-color-light: #5B574E;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    background: var(--main-bg-color);
+}
