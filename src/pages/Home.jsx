@@ -1,5 +1,5 @@
-import React from 'react'
-import "../styling/home.css"
+// import React from 'react'
+// import "../styling/home.css"
 import Header from '../components/Header'
 import EventCard from '../components/EventCard'
 import ProfileCard from '../components/ProfileCard'

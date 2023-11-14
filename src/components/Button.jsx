@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-export default function Button({ text, type, size, path }) {
+export default function Button({ text, type, size, path, onClick }) {
     const styles = {
         button: {
             border: "none",
@@ -32,7 +32,7 @@ export default function Button({ text, type, size, path }) {
     return (
         <>
             <Link to={path}>
-                <button style={styles.button} onTouchStart={go_in} onTouchEnd={come_out}>{text}</button>
+                <button style={styles.button} onTouchStart={go_in} onTouchEnd={come_out} onClick={onClick ? () => onClick() : () => {}}>{text}</button>
             </Link>
         </>
     )
