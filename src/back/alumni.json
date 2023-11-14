@@ -1,0 +1,34 @@
+[
+    {
+        "id": "123",
+        "name": "Chirag",
+        "email": "test@sdiet",
+        "password": "Aa@1234567890",
+        "event_history": [
+            {
+                "title": "Blockchain & AI in Digital Marketing",
+                "start_time": "12:00",
+                "end_time": "1:00",
+                "day": "Friday",
+                "date": "23 oct 2023",
+                "type": "pending"
+            },
+            {
+                "title": "Job market and how to set yourself apart",
+                "start_time": "2:00",
+                "end_time": "4:00",
+                "day": "Monday",
+                "date": "20 aug 2023",
+                "type": "done"
+            },
+            {
+                "title": "Inroduction to the Technical Industry",
+                "start_time": "6:00",
+                "end_time": "7:30",
+                "day": "Sunday",
+                "date": "22 jan 2023",
+                "type": "done"
+            }
+        ]
+    }
+]

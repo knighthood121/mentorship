@@ -1,11 +1,11 @@
-export default function InputField({ title, placeholder, type, state, setState }) {
+export default function OutputField({ title, text }) {
 
     const styles = {
         input: {
             padding: "1rem 2rem",
             border: "none",
             outline: "none",
-            marginBottom: "0.5em",
+            margin: "0.5em 0",
             color: "var(--text-color-light)",
             fontFamily: "Poppins",
             fontSize: "18px",
@@ -14,7 +14,7 @@ export default function InputField({ title, placeholder, type, state, setState }
             lineHeight: "normal",
             borderRadius: "13px",
             background: "var(--main-bg-color)",
-            boxShadow: "-5px -5px 10px 0px var(--light-shadow) inset, 5px 5px 10px 0px var(--dark-shadow) inset",
+            boxShadow: "-5px -5px 10px 0px var(--light-shadow), 5px 5px 10px 0px var(--dark-shadow)",
         },
 
         title: {
@@ -27,8 +27,11 @@ export default function InputField({ title, placeholder, type, state, setState }
             margin: "0em"
         }
     }
-    return <>
-        <p style={styles.title}>{title}</p>
-        <input style={styles.input} placeholder={placeholder} type={type} value={state} onChange={(event) => {setState(event.target.value)}}/>
-    </>
+
+    return (
+        <div>
+            <p style={styles.title}>{title}</p>
+            <p style={styles.input}>{text}</p>
+        </div>
+    )
 }

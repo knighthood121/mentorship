@@ -1,8 +1,8 @@
 // import React from "react";
 import { useState } from "react";
 import Header from "../components/Header";
-import profile_image from "../assets/person.jpeg"
-import arrow from "../assets/arrow.svg"
+import profile_image from "../assets/person.jpeg";
+import arrow from "../assets/arrow.svg";
 
 function ChatBox({ text, profile_image, type }) {
   const styles = {

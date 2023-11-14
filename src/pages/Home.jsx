@@ -4,7 +4,15 @@ import Header from '../components/Header'
 import EventCard from '../components/EventCard'
 import ProfileCard from '../components/ProfileCard'
 
+// import { useLocation } from 'react-router-dom'
+// import { getOngoingEvent } from '../back/Events'
+
 function Home() {
+
+  // const location = useLocation()
+
+  // const event = getOngoingEvent(location.state.userID)
+  // console.log(event)
 
   const styles = {
     text: {
