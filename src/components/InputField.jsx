@@ -1,4 +1,4 @@
-export default function InputField({ title, placeholder, type }) {
+export default function InputField({ title, placeholder, type, state, setState }) {
 
     const styles = {
         input: {
@@ -29,6 +29,6 @@ export default function InputField({ title, placeholder, type }) {
     }
     return <>
         <p style={styles.title}>{title}</p>
-        <input style={styles.input} placeholder={placeholder} type={type}/>
+        <input style={styles.input} placeholder={placeholder} type={type} value={state} onChange={(event) => {setState(event.target.value)}}/>
     </>
 }

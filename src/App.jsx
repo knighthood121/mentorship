@@ -16,13 +16,13 @@ import { useState } from 'react';
 
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true)
+  const [loggedIn, setLoggedIn] = useState(true)
   return (
     <>
       <Main>
         <Routes>
+          <Route path='/' element={<Login onLogin={setLoggedIn} />} />
           <Route path='/home' element={<Home />} />
-          <Route path='/' element={<Login onClick={setIsLoggedIn}/>} />
           <Route path='/chat' element={<Chat />} />
           <Route path='/details' element={<Details />} />
           <Route path='/docs' element={<Docs />} />
@@ -34,7 +34,7 @@ function App() {
           <Route path='/schedulemeet' element={<ScheduleMeet />} />
         </Routes>
         {
-          isLoggedIn
+          loggedIn
             ? <Navbar />
             : <></>
         }
